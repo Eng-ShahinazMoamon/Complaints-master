@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"شكاوي المواطنين "</string>
+    <string name="complaints">"شكاوي المواطنين "</string>
+    <string name="the_official_replied_the_right_of_the_sponsored">"رد المسؤول حقك المكفول "</string>
+    <string name="to_receive_complaints_from_citizens">"لتلقي شكاوي المواطنين "</string>
+    <string name="follow_complaints">"متابعة شكوي "</string>
+    <string name="new_complaints">"شكوي جديده "</string>
+    <string name="welcome_to_citizens_complaints">مرحبا بكم في شكاوي المواطنين</string>
+    <string name="address">العنوان :</string>
+    <string name="citizens_name">اسم المواطن :</string>
+    <string name="national_id">الرقم القومي :</string>
+    <string name="new_user">مستخدم جديد </string>
+    <string name="password">كلمة السر :</string>
+    <string name="phone">"التلفون: "</string>
+    <string name="register">"تسجيل "</string>
+    <string name="register_new_user">تسجيل مستخدم جديد </string>
+    <string name="citizens_id">الرقم القومي :</string>
+    <string name="complaint_number">"رقم الشكوي : "</string>
+    <string name="follow_your_complaints">"لمتابعة شكوي : "</string>
+    <string name="query">"استعلام "</string>
+</resources>
