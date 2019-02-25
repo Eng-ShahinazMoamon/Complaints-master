@@ -18,4 +18,10 @@
     <string name="query">Query</string>
     <string name="citizens_id">National ID :</string>
     <string name="complaint_number">Complaint Number :</string>
+    <string name="attachment">Attachment</string>
+    <string name="small_description">Small Description</string>
+    <string name="send">Send</string>
+    <string name="name_of_institution">Name of Institution</string>
+    <string name="subject">Subject</string>
+    <string name="new_complaints">New Complaints</string>
 </resources>
