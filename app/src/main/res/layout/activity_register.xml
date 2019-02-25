@@ -97,7 +97,8 @@
                     android:background="@drawable/circle"
                     android:ems="10"
                     android:layout_gravity="center"
-                    android:padding="15dp" />
+                    android:padding="15dp"
+                    android:importantForAutofill="no" />
                 <TextView
                     android:id="@+id/textId"
                     android:layout_width="wrap_content"
