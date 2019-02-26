@@ -14,6 +14,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class Register extends AppCompatActivity implements View.OnClickListener{
     private EditText edcitName ,edPhone ,edPassword , edId ,edAddress;
@@ -37,11 +38,12 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
     }
 
     private void registerUser(){
-        String name=edcitName.getText().toString().trim();
-        String pho= edPhone.getText().toString().trim();
-        String pass=edPassword.getText().toString().trim();
-        String id=edId.getText().toString().trim();
-        String add=edAddress.getText().toString().trim();
+        final String name=edcitName.getText().toString().trim();
+        final String pho= edPhone.getText().toString().trim();
+         String pass=edPassword.getText().toString().trim();
+        final String id=edId.getText().toString().trim();
+        final String add=edAddress.getText().toString().trim();
+
         if(TextUtils.isEmpty(name)){
             Toast.makeText(this,"Please Enter Your Name",Toast.LENGTH_SHORT).show();
         }
@@ -72,7 +74,26 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
-                    Toast.makeText(Register.this,"done",Toast.LENGTH_SHORT).show();
+                    User use=new User(
+                            name,pho, id ,add);
+                    FirebaseDatabase.getInstance().getReference("Citizens Data")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+                            . setValue(use)
+                            .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                @Override
+                                public void onComplete(@NonNull Task<Void> task) {
+                                    if(task.isSuccessful()){
+                                        Toast.makeText(Register.this,"Successful",Toast.LENGTH_SHORT).show();
+
+                                    }
+                                    else{
+                                        Toast.makeText(Register.this,"Not Successful",Toast.LENGTH_SHORT).show();
+
+                                    }
+
+                                }
+                            })
+                    ;
 
                 }
                 else {
