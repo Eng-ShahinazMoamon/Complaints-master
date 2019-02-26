@@ -27,7 +27,7 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnNew:
-                Intent ne = new Intent(Home.this, Register.class);
+                Intent ne = new Intent(Home.this, NewComp.class);
                 startActivity(ne);
                 break;
             case R.id.btnfollow:

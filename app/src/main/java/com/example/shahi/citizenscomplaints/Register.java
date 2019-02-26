@@ -1,7 +1,6 @@
 package com.example.shahi.citizenscomplaints;
 
 import android.app.ProgressDialog;
-import android.app.SearchManager;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,11 +16,11 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class Register extends AppCompatActivity implements View.OnClickListener{
-    EditText edcitName ,edPhone ,edPassword , edId ,edAddress;
-    Button regist;
-    ProgressDialog progressDialog;
+    private EditText edcitName ,edPhone ,edPassword , edId ,edAddress;
+    private Button regist;
+    private ProgressDialog progressDialog;
     //define firebase object
-    FirebaseAuth firebaseAuth;
+    private FirebaseAuth firebaseAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,15 +65,24 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
             Toast.makeText(this,"Please Enter Your Address",Toast.LENGTH_SHORT).show();
 
         }
-        progressDialog.setMessage("^^.....Register user.....^^");
+        progressDialog.setMessage("^^...Please Wait...^^");
         progressDialog.show();
 
-        firebaseAuth.createUserWithEmailAndPassword(pho , pass).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+        firebaseAuth.createUserWithEmailAndPassword(id , pass).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
+                if(task.isSuccessful()){
+                    Toast.makeText(Register.this,"done",Toast.LENGTH_SHORT).show();
+
+                }
+                else {
+                    Toast.makeText(Register.this,"fail",Toast.LENGTH_SHORT).show();
+
+                }
 
             }
         });
+
     }
 
     @Override

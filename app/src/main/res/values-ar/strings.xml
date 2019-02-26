@@ -19,4 +19,9 @@
     <string name="complaint_number">"رقم الشكوي : "</string>
     <string name="follow_your_complaints">"لمتابعة شكوي : "</string>
     <string name="query">"استعلام "</string>
+    <string name="attachment">إرفاق</string>
+    <string name="small_description">وصف صغير</string>
+    <string name="send">إرسال</string>
+    <string name="name_of_institution">أسم الجهة</string>
+    <string name="subject">الموضوع</string>
 </resources>
