@@ -86,7 +86,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
                                 public void onComplete(@NonNull Task<Void> task) {
                                     if(task.isSuccessful()){
                                         finish();
-                                        startActivity(new Intent(getApplicationContext(),Profile.class));
+                                        startActivity(new Intent(getApplicationContext(),NewComp.class));
 
                                     }
                                     else{
