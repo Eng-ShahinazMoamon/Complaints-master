@@ -118,8 +118,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="50dp"
-                android:layout_marginStart="40dp"
-                android:layout_marginEnd="40dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
                 android:orientation="horizontal"
                 android:layout_marginLeft="10dp">
 
@@ -139,7 +139,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/circle"
                     android:text="@string/attachment"
-                    android:layout_marginStart="75dp"
+                    android:layout_marginStart="50dp"
                     android:textAllCaps="false"
                     android:textSize="17sp"
                     tools:ignore="RtlHardcoded"
