@@ -10,7 +10,7 @@
     <string name="address">Address :</string>
     <string name="citizens_name">Citizens Name :</string>
     <string name="national_id">National Id :</string>
-    <string name="password">Password</string>
+    <string name="password">Password :</string>
     <string name="phone">Phone :</string>
     <string name="register_new_user">Register New User</string>
     <string name="register">Register</string>

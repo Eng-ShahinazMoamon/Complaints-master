@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.shahi.citizenscomplaints.ComNo">
+    tools:context="com.example.shahi.citizenscomplaints.Login">
 
     <RelativeLayout
         android:layout_width="0dp"
@@ -73,7 +73,7 @@
                 tools:layout_editor_absoluteY="0dp" />
 
             <EditText
-                android:id="@+id/comNo"
+                android:id="@+id/edIdNo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -85,7 +85,7 @@
                 tools:layout_editor_absoluteY="0dp" />
 
             <Button
-                android:id="@+id/queryBtn"
+                android:id="@+id/logQuery"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/linear1"

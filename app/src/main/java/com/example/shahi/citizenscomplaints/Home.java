@@ -31,7 +31,7 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
                 startActivity(ne);
                 break;
             case R.id.btnfollow:
-                Intent fll = new Intent(Home.this, ComNo.class);
+                Intent fll = new Intent(Home.this, Login.class);
                 startActivity(fll);
                 break;
             case R.id.btnregist:

@@ -41,7 +41,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
         final String name=edcitName.getText().toString().trim();
         final String pho= edPhone.getText().toString().trim();
          String pass=edPassword.getText().toString().trim();
-        final String id=edId.getText().toString().trim();
+        final String id=edId.getText().toString() +"@gmail.com".trim();
         final String add=edAddress.getText().toString().trim();
 
         if(TextUtils.isEmpty(name)){
@@ -92,18 +92,15 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
                                     }
 
                                 }
-                            })
-                    ;
-
+                            });
                 }
                 else {
-                    Toast.makeText(Register.this,"fail",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Register.this, "Authentication failed:" + task.getException(), Toast.LENGTH_SHORT).show();
 
                 }
 
             }
         });
-
     }
 
     @Override

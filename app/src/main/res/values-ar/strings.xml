@@ -17,7 +17,7 @@
     <string name="register_new_user">تسجيل مستخدم جديد </string>
     <string name="citizens_id">الرقم القومي :</string>
     <string name="complaint_number">"رقم الشكوي : "</string>
-    <string name="follow_your_complaints">"لمتابعة شكوي : "</string>
+    <string name="follow_your_complaints">"لمتابعة شكوي "</string>
     <string name="query">"استعلام "</string>
     <string name="attachment">إرفاق</string>
     <string name="small_description">وصف صغير</string>
