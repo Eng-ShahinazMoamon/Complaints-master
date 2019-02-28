@@ -3,9 +3,10 @@
     package="com.example.shahi.citizenscomplaints">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/slogo"
@@ -26,7 +27,8 @@
         <activity android:name=".Register" />
         <activity android:name=".Login" />
         <activity android:name=".NewCom" />
-        <activity android:name=".NewComp"></activity>
+        <activity android:name=".NewComp" />
+        <activity android:name=".Profile"></activity>
     </application>
 
 </manifest>

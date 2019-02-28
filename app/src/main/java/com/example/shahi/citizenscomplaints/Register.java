@@ -1,6 +1,7 @@
 package com.example.shahi.citizenscomplaints;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -73,6 +74,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
         firebaseAuth.createUserWithEmailAndPassword(id , pass).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
+                progressDialog.dismiss();
                 if(task.isSuccessful()){
                     User use=new User(
                             name,pho, id ,add);
@@ -83,7 +85,8 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
                                     if(task.isSuccessful()){
-                                        Toast.makeText(Register.this,"Successful",Toast.LENGTH_SHORT).show();
+                                        finish();
+                                        startActivity(new Intent(getApplicationContext(),Profile.class));
 
                                     }
                                     else{
