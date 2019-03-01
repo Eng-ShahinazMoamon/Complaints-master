@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class Register extends AppCompatActivity implements View.OnClickListener{
-    private EditText edcitName ,edPhone ,edPassword , edId ,edAddress;
+    private EditText edcitName ,edPhone , edId ,edAddress;
     private Button regist;
     private ProgressDialog progressDialog;
     //define firebase object
@@ -30,7 +30,6 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
         firebaseAuth=FirebaseAuth.getInstance();
         edcitName = findViewById(R.id.edCit);
         edPhone = findViewById(R.id.edPho);
-        edPassword = findViewById(R.id.edPass);
         edId = findViewById(R.id.edNational);
         edAddress = findViewById(R.id.edAdd);
         regist = findViewById(R.id.btnRegister);
@@ -41,7 +40,6 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
     private void registerUser(){
         final String name=edcitName.getText().toString().trim();
         final String pho= edPhone.getText().toString().trim();
-         String pass=edPassword.getText().toString().trim();
         final String id=edId.getText().toString() +"@gmail.com".trim();
         final String add=edAddress.getText().toString().trim();
 
@@ -54,11 +52,6 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
 
         }
 
-        if(TextUtils.isEmpty(pass)){
-
-            Toast.makeText(this,"Please Password",Toast.LENGTH_SHORT).show();
-
-        }
         if(TextUtils.isEmpty(id)){
 
             Toast.makeText(this,"Please Enter Your Id",Toast.LENGTH_SHORT).show();
@@ -71,7 +64,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
         progressDialog.setMessage("^^...Please Wait...^^");
         progressDialog.show();
 
-        firebaseAuth.createUserWithEmailAndPassword(id , pass).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+        firebaseAuth.createUserWithEmailAndPassword(id , pho).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 progressDialog.dismiss();

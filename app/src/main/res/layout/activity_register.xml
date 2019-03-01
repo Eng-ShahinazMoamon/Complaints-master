@@ -84,25 +84,7 @@
                     android:inputType="phone"
                     android:layout_gravity="center"
                     android:padding="15dp" />
-                <TextView
-                    android:id="@+id/textPass"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/password"
-                    android:textColor="#000"
-                    android:textSize="18sp" />
 
-                <EditText
-                    android:id="@+id/edPass"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/circle"
-                    android:ems="10"
-                    android:layout_gravity="center"
-                    android:padding="15dp"
-                    android:inputType="textPassword"
-                    android:importantForAutofill="no" />
                 <TextView
                     android:id="@+id/textId"
                     android:layout_width="wrap_content"

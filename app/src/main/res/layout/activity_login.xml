@@ -84,6 +84,28 @@
                 tools:layout_editor_absoluteX="8dp"
                 tools:layout_editor_absoluteY="0dp" />
 
+            <TextView
+                android:id="@+id/citPho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/phone"
+                android:textColor="#000"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <EditText
+                android:id="@+id/edPhNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/circle"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="0dp" />
             <Button
                 android:id="@+id/logQuery"
                 android:layout_width="wrap_content"
