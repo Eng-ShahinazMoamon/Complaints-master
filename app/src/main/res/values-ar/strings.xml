@@ -24,4 +24,11 @@
     <string name="send">إرسال</string>
     <string name="name_of_institution">أسم الجهة</string>
     <string name="subject">الموضوع</string>
+    <string name="attach">إرفاق</string>
+    <string name="enter_id">"فضلا ادخل الرقم القومي "</string>
+    <string name="enter_name">فضلا ادخل اسمك</string>
+    <string name="enter_phone">فضلا ادخل رقم الهاتف</string>
+    <string name="enter_address">فضلا ادخل عنوانك</string>
+    <string name="wait">^^...فضلا انتظر قليلا...^^</string>
+    <string name="op_notsucc">عفوا لم تتم العملية بنجاح</string>
 </resources>

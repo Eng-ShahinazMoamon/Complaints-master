@@ -44,21 +44,21 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
         final String add=edAddress.getText().toString().trim();
 
         if(TextUtils.isEmpty(name)){
-            Toast.makeText(this,"Please Enter Your Name",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,R.string.enter_name,Toast.LENGTH_SHORT).show();
         }
         if(TextUtils.isEmpty(pho)){
 
-            Toast.makeText(this,"Please Phone",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,R.string.enter_phone,Toast.LENGTH_SHORT).show();
 
         }
 
         if(TextUtils.isEmpty(id)){
 
-            Toast.makeText(this,"Please Enter Your Id",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,R.string.enter_id,Toast.LENGTH_SHORT).show();
 
         } if(TextUtils.isEmpty(add)) {
 
-            Toast.makeText(this,"Please Enter Your Address",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,R.string.enter_address,Toast.LENGTH_SHORT).show();
 
         }
         progressDialog.setMessage("^^...Please Wait...^^");
@@ -83,7 +83,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
 
                                     }
                                     else{
-                                        Toast.makeText(Register.this,"Not Successful",Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(Register.this,R.string.op_notsucc,Toast.LENGTH_SHORT).show();
 
                                     }
 
