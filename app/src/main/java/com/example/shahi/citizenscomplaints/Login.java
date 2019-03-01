@@ -41,11 +41,11 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
         final String phone = phNo.getText().toString().trim();
 
         if (TextUtils.isEmpty(id)) {
-            Toast.makeText(this, "Please Enter Id", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.enter_id, Toast.LENGTH_SHORT).show();
         }
 
             if (TextUtils.isEmpty(phone)) {
-                Toast.makeText(this, "Please Enter Your Phone", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.enter_phone, Toast.LENGTH_SHORT).show();
             }
                 progressDialog.setMessage("^^...Please Wait...^^");
                 progressDialog.show();
